@@ -1,0 +1,61 @@
+.loan-calculator {
+    background: #1e1e2d;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  h3{
+    font-size: 35px;
+    font-weight: bold;
+    
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+  }
+  
+  .funding {
+    background: #2c2c3a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #00bcd4;
+    
+  }
+  
+  .vehicle{
+    text-align: start;
+  }
+  
+  .slider-container {
+    background: #2c2c3a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: start;
+  }
+  
+  input[type='range'] {
+    width: 100%;
+  }
+  
+  .installment {
+    margin-bottom: 15px;
+    text-align: start;
+  }
+  
+  button {
+    background: #00bcd4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+  }

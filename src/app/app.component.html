@@ -1,0 +1,37 @@
+<div class="loan-calculator">
+  <h2>Loan Calculator</h2>
+  <div class="funding">
+    <p>Maximum Funding</p>
+    <h3>Rp 17.484.500</h3>
+    <hr>
+    <p class="vehicle">Honda ADV 150 CBS<br>2022</p>
+  </div>
+
+  <div class="slider-container">
+    <label>Loan Amount</label>
+    <p style="font-size: 25px; margin-top: 10px; margin-bottom: 10px;">Rp {{ loanAmount }}</p>
+    <input type="range" min="1000000" max="17484500" [(ngModel)]="loanAmount" (input)="calculateInstallment()">
+    <div class="d-flex justify-content-between">  
+      <p>1.000.000</p>
+      <p>17.484.500</p>
+    </div>
+  </div>
+
+  <div class="slider-container">
+    <label>Loan Period</label>
+    <input type="range" min="6" max="18" [(ngModel)]="loanPeriod" (input)="calculateInstallment()">
+    <div class="d-flex justify-content-between">  
+      <p>{{ loanPeriod }} Months</p>
+      <p>18 Months</p>
+    </div>
+    
+  </div>
+
+  <div class="installment">
+    <p>Estimated monthly installments</p>
+    <h3>Rp {{ monthlyInstallment }}</h3>
+    <p class="note">Installment fees may change according to the results of the verification of the physical condition of the vehicle at the finance office.</p>
+  </div>
+
+  <button (click)="applyLoan()">APPLY LOAN</button>
+</div>
